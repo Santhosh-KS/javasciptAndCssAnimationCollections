@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body>
+    <svg width="200", height="200", viewBox="-100 -100 200 200">
+      <circle r="90" class="minute_marker" pathLength="60" />
+      <circle r="90" class="hour_marker"   pathLength="60" />
+      <text id="text" x="45" y="0" class="time--text">00</text>
+      <g id="hour_hand">
+        <line x1="0" y1="0" x2="0" y2="-50" class="hand" />
+        <line x1="0" y1="-12" x2="0" y2="-50" class="hand hand--thick" />
+      </g>
+      <g id="minute_hand">
+        <line x1="0" y1="0" x2="0" y2="-80" class="hand" />
+        <line x1="0" y1="-12" x2="0" y2="-80" class="hand hand--thick" />
+      </g>
+      <g id="second_hand">
+        <line x1="0" y1="12" x2="0" y2="-80" class="hand hand--second" />
+      </g>
+      <circle class="center" r="3"/>
+    </svg>
+    <script src="index.js"> </script>
+  </body>
+</html>
